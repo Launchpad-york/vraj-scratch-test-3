@@ -14,7 +14,7 @@ function readSession() {
 }
 
 function redirectHome() {
-  window.location.replace(new URL('../login.html', window.location.href))
+  window.location.replace(new URL('index.html', window.location.href))
 }
 
 const session = readSession()
