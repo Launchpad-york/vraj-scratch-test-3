@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vraj's Facebook – log in or sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <main class="hero">
+        <section class="hero__intro" aria-labelledby="tagline">
+          <div class="logo">Vraj's Facebook</div>
+          <h1 id="tagline" class="tagline">
+            this is created by Vraj
+          </h1>
+        </section>
+
+        <section class="hero__panel" aria-label="Log in">
+          <form
+            class="card login-form"
+            id="login-form"
+            novalidate
+            aria-labelledby="login-form-heading"
+          >
+            <h2 class="login-form__title" id="login-form-heading">Log in</h2>
+            <label class="sr-only" for="email">Email or phone</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Email or phone number"
+              autocomplete="username"
+            />
+
+            <label class="sr-only" for="password">Password</label>
+            <input
+              class="input"
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+              autocomplete="current-password"
+            />
+
+            <button class="btn btn--primary" type="submit">Log in</button>
+            <a class="link" href="#">Forgotten password?</a>
+            <hr class="divider" />
+            <button class="btn btn--success" type="button" id="create-account">
+              Create new account
+            </button>
+          </form>
+          <p class="subcard">
+            <strong>Create a Page</strong> for a celebrity, brand or business.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__langs">
+          <span>English (UK)</span>
+          <a href="#">हिन्दी</a>
+          <a href="#">اردو</a>
+          <a href="#">தமிழ்</a>
+          <a href="#">বাংলা</a>
+          <a href="#">मराठी</a>
+          <a href="#">ગુજરાતી</a>
+          <a href="#">ಕನ್ನಡ</a>
+          <a href="#">മലയാളം</a>
+          <a href="#">ਪੰਜਾਬੀ</a>
+          <button type="button" class="footer__more" aria-label="Show more languages">
+            +
+          </button>
+        </div>
+        <div class="footer__links">
+          <a href="#">Sign Up</a>
+          <a href="#">Log in</a>
+          <a href="#">Messenger</a>
+          <a href="#">Facebook Lite</a>
+          <a href="#">Video</a>
+          <a href="#">Places</a>
+          <a href="#">Games</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Meta Pay</a>
+          <a href="#">Meta Store</a>
+          <a href="#">Meta Quest</a>
+          <a href="#">Instagram</a>
+          <a href="#">Threads</a>
+          <a href="#">Contact Uploading &amp; Non-Users</a>
+        </div>
+        <p class="footer__meta">Meta © 2026</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -14,7 +14,7 @@ form?.addEventListener('submit', (e) => {
     return
   }
   sessionStorage.setItem(AUTH_KEY, JSON.stringify({ email: email.value.trim() }))
-  window.location.assign(new URL('dashboard.html', window.location.href))
+  window.location.assign(new URL('dashboard/', window.location.href))
 })
 
 createBtn?.addEventListener('click', () => {
