@@ -327,3 +327,128 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* Dashboard */
+.dashboard-page {
+  min-height: 100vh;
+}
+
+.dashboard__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 2px rgba(28, 30, 33, 0.06);
+}
+
+.dashboard__brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--fb-blue);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.dashboard__brand:hover {
+  text-decoration: underline;
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--fb-blue);
+  border: 1px solid rgba(24, 119, 242, 0.45);
+  font-size: 0.9375rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn--outline:hover {
+  background: rgba(24, 119, 242, 0.08);
+  box-shadow: none;
+}
+
+.btn--sm {
+  font-size: 0.9375rem;
+  padding: 0.5rem 1rem;
+}
+
+.dashboard {
+  flex: 1;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.dashboard-card {
+  border-radius: 12px;
+  border: 1px solid rgba(228, 230, 235, 0.95);
+  background: linear-gradient(165deg, #ffffff 0%, #fafbfd 55%, #ffffff 100%);
+  box-shadow:
+    0 1px 2px rgba(28, 30, 33, 0.04),
+    0 8px 24px rgba(28, 30, 33, 0.06);
+}
+
+.dashboard__welcome {
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.dashboard__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.dashboard__subtitle {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.dashboard__hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.dashboard__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .dashboard__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dashboard-tile {
+  padding: 1.25rem 1.25rem 1.375rem;
+}
+
+.dashboard-tile__title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dashboard-tile__body {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.dashboard-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.dashboard-footer .footer__meta {
+  text-align: center;
+}

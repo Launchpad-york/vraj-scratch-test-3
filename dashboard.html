@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Vraj's Facebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page dashboard-page">
+      <header class="dashboard__topbar">
+        <a class="dashboard__brand" href="./index.html">Vraj's Facebook</a>
+        <button type="button" class="btn btn--outline btn--sm" id="logout-btn">
+          Log out
+        </button>
+      </header>
+
+      <main class="dashboard">
+        <section class="dashboard__welcome card dashboard-card" aria-labelledby="dash-heading">
+          <h1 id="dash-heading" class="dashboard__title">Dashboard</h1>
+          <p class="dashboard__subtitle">
+            Signed in as <strong id="dashboard-user">—</strong>
+          </p>
+          <p class="dashboard__hint">Welcome — this is a local demo (no server).</p>
+        </section>
+
+        <section class="dashboard__grid" aria-label="Quick overview">
+          <article class="card dashboard-card dashboard-tile">
+            <h2 class="dashboard-tile__title">Feed</h2>
+            <p class="dashboard-tile__body">Your posts and updates would appear here.</p>
+          </article>
+          <article class="card dashboard-card dashboard-tile">
+            <h2 class="dashboard-tile__title">Messages</h2>
+            <p class="dashboard-tile__body">Connect with friends — demo placeholder.</p>
+          </article>
+          <article class="card dashboard-card dashboard-tile">
+            <h2 class="dashboard-tile__title">Notifications</h2>
+            <p class="dashboard-tile__body">No new notifications in this demo.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer dashboard-footer">
+        <p class="footer__meta">Meta © 2026 · Dashboard demo</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/dashboard.js"></script>
+  </body>
+</html>

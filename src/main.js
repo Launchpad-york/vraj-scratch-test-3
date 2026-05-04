@@ -1,5 +1,7 @@
 import './style.css'
 
+const AUTH_KEY = 'vraj_demo_auth'
+
 const form = document.getElementById('login-form')
 const createBtn = document.getElementById('create-account')
 
@@ -11,7 +13,8 @@ form?.addEventListener('submit', (e) => {
     window.alert('Please enter email or phone and password.')
     return
   }
-  window.alert('This is a static demo — no data is sent.')
+  sessionStorage.setItem(AUTH_KEY, JSON.stringify({ email: email.value.trim() }))
+  window.location.assign(new URL('dashboard.html', window.location.href))
 })
 
 createBtn?.addEventListener('click', () => {
