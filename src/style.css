@@ -3,7 +3,9 @@
   --fb-blue-hover: #166fe5;
   --fb-green: #42b72a;
   --fb-green-hover: #36a420;
-  --bg: #f0f2f5;
+  --bg: #ecf1fb;
+  --bg-accent-soft: rgba(24, 119, 242, 0.11);
+  --bg-accent-warm: rgba(147, 112, 219, 0.06);
   --text: #1c1e21;
   --muted: #606770;
   --border: #dddfe2;
@@ -29,7 +31,13 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 115% 85% at 8% -8%, var(--bg-accent-soft), transparent 52%),
+    radial-gradient(ellipse 95% 75% at 92% 8%, var(--bg-accent-warm), transparent 48%),
+    radial-gradient(ellipse 80% 55% at 48% 108%, var(--bg-accent-soft), transparent 42%),
+    linear-gradient(172deg, #f4f7fd 0%, #eef3fb 38%, #f3f1fb 72%, #eaf1fb 100%);
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.34;
 }
@@ -38,6 +46,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: transparent;
 }
 
 .hero {
