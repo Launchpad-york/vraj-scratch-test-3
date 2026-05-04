@@ -122,12 +122,12 @@ body {
 }
 
 .btn--primary {
-  background: var(--fb-blue);
+  background: #dc2626;
   color: #fff;
 }
 
 .btn--primary:hover {
-  background: var(--fb-blue-hover);
+  background: #b91c1c;
 }
 
 .btn--success {
