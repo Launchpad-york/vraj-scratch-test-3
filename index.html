@@ -22,7 +22,13 @@
         </section>
 
         <section class="hero__panel" aria-label="Log in">
-          <form class="card" id="login-form" novalidate>
+          <form
+            class="card login-form"
+            id="login-form"
+            novalidate
+            aria-labelledby="login-form-heading"
+          >
+            <h2 class="login-form__title" id="login-form-heading">Log in</h2>
             <label class="sr-only" for="email">Email or phone</label>
             <input
               class="input"
